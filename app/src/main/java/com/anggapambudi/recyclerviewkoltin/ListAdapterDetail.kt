@@ -2,23 +2,22 @@ package com.anggapambudi.recyclerviewkoltin
 
 import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import org.jetbrains.anko.sdk27.coroutines.onClick
 
-class ListRumahAdatAdapter (private val data: ArrayList<RumahAdat>) : RecyclerView.Adapter<ViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+class ListAdapterDetail (private val data: ArrayList<RumahAdat>) : RecyclerView.Adapter<ViewHolderDetail>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderDetail {
         val inflater = LayoutInflater.from(parent.context)
-        return ViewHolder(inflater, parent)
+        return ViewHolderDetail(inflater, parent)
     }
 
     override fun getItemCount(): Int {
         return data.size
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(data[position])
+    override fun onBindViewHolder(holder: ViewHolderDetail, position: Int) {
+        holder.bindtwo(data[position + 1])
     }
 
 

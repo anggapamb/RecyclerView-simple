@@ -1,11 +1,15 @@
 package com.anggapambudi.recyclerviewkoltin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import org.jetbrains.anko.sdk27.coroutines.onClick
 
 class HomeApp : AppCompatActivity() {
+
+    //belum ngasih onclick itemview
 
     lateinit var rv_item: RecyclerView
     lateinit var adapter: ListRumahAdatAdapter
@@ -16,6 +20,7 @@ class HomeApp : AppCompatActivity() {
         init()
         rv_item.layoutManager = LinearLayoutManager(this)
         rv_item.adapter = adapter
+
     }
     private fun init() {
         rv_item = findViewById(R.id.rv_item)
