@@ -9,7 +9,7 @@ import org.jetbrains.anko.sdk27.coroutines.onClick
 
 class HomeApp : AppCompatActivity() {
 
-    //belum ngasih onclick itemview
+    //onclick belum
 
     lateinit var rv_item: RecyclerView
     lateinit var adapter: ListRumahAdatAdapter
