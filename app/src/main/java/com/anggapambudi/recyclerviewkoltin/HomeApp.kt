@@ -1,15 +1,12 @@
 package com.anggapambudi.recyclerviewkoltin
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import org.jetbrains.anko.sdk27.coroutines.onClick
 
 class HomeApp : AppCompatActivity() {
 
-    //belum bisa onclick ke detail activity
 
     lateinit var rv_item: RecyclerView
     lateinit var adapter: ListRumahAdatAdapter
@@ -17,11 +14,14 @@ class HomeApp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_app)
+
         init()
         rv_item.layoutManager = LinearLayoutManager(this)
         rv_item.adapter = adapter
 
+
     }
+
     private fun init() {
         rv_item = findViewById(R.id.rv_item)
 

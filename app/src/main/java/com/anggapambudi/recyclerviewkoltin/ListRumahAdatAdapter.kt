@@ -1,11 +1,8 @@
 package com.anggapambudi.recyclerviewkoltin
 
-import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import org.jetbrains.anko.sdk27.coroutines.onClick
 
 class ListRumahAdatAdapter (private val data: ArrayList<RumahAdat>) : RecyclerView.Adapter<ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

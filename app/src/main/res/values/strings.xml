@@ -5,4 +5,5 @@
     <string name="rumah_adat">Rumah Adat</string>
     <string name="contoh">Rumah Joglo Jawa</string>
     <string name="detail_contoh">Layout ini berisi tentang informasi detail mengenai data rumah adat di atas. Ketika anda mengeklik gambar atau list pada home activity, anda akan dibawa ke activity ini untuk menampilkan informasi detainya</string>
+    <string name="gambar_rumah">gambar rumah</string>
 </resources>
